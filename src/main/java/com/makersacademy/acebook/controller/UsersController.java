@@ -113,7 +113,7 @@ public class UsersController {
         String thumbnail_url = map.get("thumbnail_url");
         user.setProfilePicture(thumbnail_url);
         userRepository.save(user);
-        return new RedirectView("/users/profile");
+        return new RedirectView("/users/my-profile");
     }
 
     @GetMapping("/users")
